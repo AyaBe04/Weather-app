@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="wastylesheet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+<body>
+      <div class="container"">
+        <form id="searchForm">
+          <input type="text" id="cityInput" placeholder="Enter a city" required>
+          <button type="submit">Search</button>
+        </form>
+        <h1 id="cityResult">Toronto</h1>
+        <div class="wd" id="WD">Saturday 14:48</div>
+        <div class="wd">Sunny</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+            <div class="clearfix">
+                <div class="float-left weather-icon">
+                    <canvas width="38" height="38"></canvas>
+                </div>
+                <i class="fa-regular fa-sun"></i>
+                <div class="weather-temp weather-tempt" id="temperatureResult">21°C</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="weather-detail">Precipitation: 0%</div>
+            <div class="weather-detail">Wind: 5mi/h</div>
+        </div>
+    </div>
+    </div>
+      <div class="row d-flex">
+        <div class="col-md-2 mb-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Monday</h5>
+              <i class="fa-regular fa-sun"></i>
+              <p class="card-text">Sunny</p>
+              <p class="card-text">25°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <i class="fa-solid fa-cloud"></i>
+              <p class="card-text">Cloudy</p>
+              <p class="card-text">20°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <i class="fa-solid fa-cloud-rain"></i>
+              <p class="card-text">Rainy</p>
+              <p class="card-text">18°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <i class="fa-solid fa-cloud-sun"></i>
+              <p class="card-text">Partly Cloudy</p>
+              <p class="card-text">23°C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <i class="fa-solid fa-wind"></i>
+              <p class="card-text">Windy</p>
+              <p class="card-text">17°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://kit.fontawesome.com/79a5af0512.js" crossorigin="anonymous"></script>
+  </body>
+</html>
